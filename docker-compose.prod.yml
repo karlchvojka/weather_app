@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   sample-prod:
-    container_name: react_template_2022-prod
+    container_name: weather_app
     build:
       context: .
       dockerfile: Dockerfile.prod

@@ -2,7 +2,7 @@
 const path = require('path')
 
 // Plugin Library Imports
-const HtmlWebPackPlugin = require("html-webpack-plugin")
+const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -29,7 +29,7 @@ module.exports = {
    */
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, 'dist'),
     },
     open: true,
     hot: true,
@@ -80,7 +80,7 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader"
+            loader: 'html-loader'
           }
         ]
       }
@@ -90,7 +90,7 @@ module.exports = {
   /**
    * Plugin configurations.
    */
-   plugins: [
+  plugins: [
     
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, './src/template.html'), // template file

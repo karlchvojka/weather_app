@@ -13,7 +13,7 @@ const App = () => {
     <StyledApp>
       <GlobalStyle />
       <Header />
-      <h1>Welcome to The Docker Typescript React App thats build using Webpack and Babel separately</h1>
+      <h1>Welcome to the Weather App</h1>
     </StyledApp>
   )
 }
