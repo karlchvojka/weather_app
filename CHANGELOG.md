@@ -29,3 +29,18 @@ Initial building
   - Updated title field.
 - src/template.html
   - Updated title field.
+
+
+## [1.0.0] - 2022-09-13
+Global config/settings
+
+### Added
+- BG image asset: ~/src/globalAssets/images/hexBgRep.png
+- Added Module config support for TS to ~/src/globalConfig/ts
+
+### Changed
+- Added Background image and css to ~/src/globalConfig/GlobalStyles.tsx
+- Updated for TypeScript PNG support:
+  - ~/tsconfig.json
+  - ~/webpack.config.json
+- Updated webpack.config.json for added ts type declarations
