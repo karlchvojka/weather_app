@@ -2,6 +2,9 @@
 import { createGlobalStyle } from 'styled-components'
 import { mediaQueries } from 'globalConfig/mobile'
 
+// Asset Imports
+import bgPattern from 'globalAssets/images/hexBgRep.png'
+
 const GlobalStyle = createGlobalStyle`  
   /*
     START OF RESET
@@ -61,6 +64,10 @@ const GlobalStyle = createGlobalStyle`
   /* END OF RESET */
 
   /* MOBILE FIRST DEFAULT STYLES */
+  body {
+    background-image: url(${bgPattern});
+    background-repeat: repeat;
+  }
 
   /* Min width of 375 */
   ${mediaQueries('iphoneSe')`

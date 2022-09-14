@@ -4,7 +4,7 @@ import { mediaQueries } from 'globalConfig/mobile'
 
 const StyledApp = styled.section`
 /* MOBILE FIRST DEFAULT STYLES */
-  width: 100%;
+  width: auto;
 
 /* Min width of 375 */
   ${mediaQueries('iphoneSe')`
