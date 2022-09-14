@@ -16,6 +16,7 @@
       "elements/*": ["src/components/elements/*"],
       "globalAssets/*": ["src/globalAssets/*"],
       "globalConfig/*": ["src/globalConfig/*"],
+      "helpers/*": ["src/helpers/*"],
       "modules/*": ["src/components/modules/*"],
       "layouts/*": ["layouts", "src/components/layouts/*"]
     }
