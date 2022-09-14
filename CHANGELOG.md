@@ -44,3 +44,15 @@ Global config/settings
   - ~/tsconfig.json
   - ~/webpack.config.json
 - Updated webpack.config.json for added ts type declarations
+
+## [1.0.1] - 2022-09-13
+Header
+
+### Added
+- Font files: ./src/globalAssets/fonts
+- Font config:
+  - ./src/globalAssets/fonts/fonts.tsx
+  - ./tsconfig.json
+  - ./webpack.config.js
+- Header Styles
+  - ./src/components/modules/Header/StyledHeader.tsx
