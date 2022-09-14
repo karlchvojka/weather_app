@@ -1,5 +1,6 @@
 // Framework Imports
 const path = require('path')
+const Dotenv = require('dotenv-webpack')
 
 // Plugin Library Imports
 const HtmlWebPackPlugin = require('html-webpack-plugin')
@@ -95,6 +96,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, './src/template.html'), // template file
       filename: 'index.html', // output file
-    })
+    }),
+    new Dotenv()
   ]
 }
