@@ -51,6 +51,7 @@ module.exports = {
       elements: path.resolve(__dirname, './src/components/elements'),
       globalAssets: path.resolve(__dirname, './src/globalAssets'),
       globalConfig: path.resolve(__dirname, './src/globalConfig'),
+      helpers: path.resolve(__dirname, './src/helpers'),
       modules: path.resolve(__dirname, './src/components/modules'),
       pages: path.resolve(__dirname, './src/components/pages'),
       templates: path.resolve(__dirname, './src/components/templates'),
