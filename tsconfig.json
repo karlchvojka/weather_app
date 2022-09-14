@@ -20,6 +20,6 @@
       "layouts/*": ["layouts", "src/components/layouts/*"]
     }
   },
-  "include": ["src/**/*", "./index.tsx", "src/globalConfig/ts/*"],
+  "include": ["src/**/*", "./index.tsx", "src/globalConfig/ts/*.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

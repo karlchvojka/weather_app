@@ -5,6 +5,13 @@ import { mediaQueries } from 'globalConfig/mobile'
 // Asset Imports
 import bgPattern from 'globalAssets/images/hexBgRep.png'
 
+// Variable Imports
+import { 
+  accent,
+  lightBlue,
+  white
+} from 'globalConfig/css_vars.js'
+
 const GlobalStyle = createGlobalStyle`  
   /*
     START OF RESET
@@ -67,6 +74,51 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-image: url(${bgPattern});
     background-repeat: repeat;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: ${lightBlue};
+    font-family: 'MontserratBold';
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+
+  p {
+    color: ${white};
+    font-size: 18px;
+    font-family: 'Roboto-Condensed', sans-serif;
+  }
+
+  a:link, a:visited {
+    color: ${white};
+    font-size: 18px;
+  }
+
+  a:hover {
+    color: ${accent};
   }
 
   /* Min width of 375 */
