@@ -54,7 +54,7 @@ module.exports = {
       helpers: path.resolve(__dirname, './src/helpers'),
       modules: path.resolve(__dirname, './src/components/modules'),
       pages: path.resolve(__dirname, './src/components/pages'),
-      templates: path.resolve(__dirname, './src/components/templates'),
+      layouts: path.resolve(__dirname, './src/components/layouts'),
     },
 
     extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
