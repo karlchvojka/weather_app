@@ -94,7 +94,7 @@ Api pulls
   - else shows 'Loading'
 
 ## [1.0.3] - 2022-09-15
-
+Implemented Current Weather Component
 ### Added
 #### Libraries Added (./package.json)
 - moment
@@ -114,3 +114,25 @@ Api pulls
 - ./src/App.tsx
   - Implemented CurrentWeather
   - Types change
+
+## [1.0.4] - 2022-09-15
+Implemented Future Weather Component
+
+### Added
+#### Components Added (./src/components)
+- ./layouts/WeatherWrap
+  - Wrapper for Future and Current weather
+- ./modules/DayItem
+  - Component to wrap each day.
+- ./modules/FutureWeather
+  - Component to wrap and map through a list of days.
+
+### Changed
+- ./src/components/modules/CurrentWeather/StyledCurrentWeather
+  - Removed some un-needed code.
+- ./src/App.tsx
+  - Types update
+- ./tsconfig.json
+  - Added layout alias
+- ./webpack.config.js
+  - Added layout alias
