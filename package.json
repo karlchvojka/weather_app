@@ -1,6 +1,6 @@
 {
   "name": "weather_app_rebuild",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple Weather App.",
   "main": "index.js",
   "scripts": {
@@ -48,10 +48,13 @@
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "axios": "^0.27.2",
+    "moment": "^2.29.4",
     "path-browserify": "^1.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-moment": "^1.1.2",
     "styled-components": "^5.3.5",
     "typescript": "^4.8.2"
   }

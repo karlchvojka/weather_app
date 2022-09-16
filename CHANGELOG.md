@@ -92,3 +92,25 @@ Api pulls
   - Set up use Effects
   - render waits for state updates before rendering.
   - else shows 'Loading'
+
+## [1.0.3] - 2022-09-15
+
+### Added
+#### Libraries Added (./package.json)
+- moment
+- react-icons
+- react-moment
+
+#### Components Added (./src/components)
+- ./elements/WeatherIcon
+  - WeatherIcon.tsx
+    - The weather icon Component.
+    - Allows for conditional rendering depending on string to select icon.
+- ./modules/CurrentWeather
+  - CurrentWeather.tsx
+    - Current weather component for displaying current weather.
+
+### Changed
+- ./src/App.tsx
+  - Implemented CurrentWeather
+  - Types change
