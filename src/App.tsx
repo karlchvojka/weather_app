@@ -2,9 +2,12 @@
 import React, { useState, useEffect} from 'react'
 
 // Library Imports
-import Header from 'modules/Header/Header'
 import { GetPosition } from 'helpers/getPosition'
 import { FetchWeather } from 'helpers/api'
+
+// Component Imports
+import Header from 'modules/Header/Header'
+import CurrentWeather from 'modules/CurrentWeather/CurrentWeather'
 
 // CSS Imports
 import GlobalFonts from  'globalAssets/fonts/fonts'
@@ -12,20 +15,38 @@ import GlobalStyle from 'src/globalConfig/GlobalStyles'
 import StyledApp from './StyledApp'
 
 // Type Declarations
-interface WeatherItem {
-  description?: string
+interface weather {
+  current: {
+    dt: number;
+    feels_like: number;
+    humidity: number;
+    pressure: number;
+    sunrise: number;
+    sunset: number;
+    temp: number;
+    wind_deg: number;
+    wind_speed: number;
+    weather: Array<WeatherItem>
+  },
+  daily: Array<DailyItem>
 }
 
-interface weather {
-  current?: {
-    weather?: Array<WeatherItem>
+
+interface WeatherItem {
+  description: string;
+}
+
+interface DailyItem {
+  temp: {
+    min: number;
+    max: number;
   }
 }
 
 const App = () => {
   // State Declarations
   const [pos, setPos] = useState([])
-  const [weather, setWeather] = useState<weather>({})
+  const [weather, setWeather] = useState<weather>({} as weather)
 
   // UseEffect to handle getting position and setting pos state.
   useEffect(() => {
@@ -44,10 +65,9 @@ const App = () => {
       <GlobalFonts />
       <GlobalStyle />
       <Header />
-      <h1>Welcome to the Weather App</h1>
       {
         Object.keys(weather).length > 0 ?
-          <p>{weather.current.weather[0].description}</p>
+          <CurrentWeather currentWeather={weather.current} dayWeather={weather.daily[0]}/>
           :
           <p>Loading</p>
       }
