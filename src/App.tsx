@@ -8,6 +8,8 @@ import { FetchWeather } from 'helpers/api'
 // Component Imports
 import Header from 'modules/Header/Header'
 import CurrentWeather from 'modules/CurrentWeather/CurrentWeather'
+import FutureWeather from 'modules/FutureWeather/FutureWeather'
+import WeatherWrap from 'layouts/WeatherWrap/WeatherWrap'
 
 // CSS Imports
 import GlobalFonts from  'globalAssets/fonts/fonts'
@@ -37,10 +39,16 @@ interface WeatherItem {
 }
 
 interface DailyItem {
+  dt: number;
   temp: {
     min: number;
     max: number;
   }
+  weather: Array<weatherItem>;
+}
+
+interface weatherItem {
+  description: string;
 }
 
 const App = () => {
@@ -67,7 +75,10 @@ const App = () => {
       <Header />
       {
         Object.keys(weather).length > 0 ?
-          <CurrentWeather currentWeather={weather.current} dayWeather={weather.daily[0]}/>
+          <WeatherWrap>
+            <CurrentWeather currentWeather={weather.current} dayWeather={weather.daily[0]}/>
+            <FutureWeather dailyWeather={weather.daily} />
+          </WeatherWrap>
           :
           <p>Loading</p>
       }

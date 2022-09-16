@@ -3,21 +3,11 @@ import styled from 'styled-components'
 import { mediaQueries } from 'globalConfig/mobile'
 
 // Variable Imports
-import { darkGrey, lightBlue, white } from 'globalConfig/css_vars'
+import { lightBlue } from 'globalConfig/css_vars'
 
 const StyledCurrentWeather = styled.section`
 /* MOBILE FIRST DEFAULT STYLES */
-  background-color: ${darkGrey};
-  border-radius: 10px;
-  border: 1px solid #000;
-  -webkit-box-shadow: 0px 0px 18px 4px rgba(0,171,223,0.48); 
-  box-shadow: 0px 0px 18px 4px rgba(0,171,223,0.48);
-  color: ${white};
-  margin: 50px auto;
-  padding: 20px;
-  width: 860px;
-
-
+  
   .currentWrap {
     display: grid;
     grid-template-columns: 150px 1fr 2fr;
