@@ -18,7 +18,7 @@
       "globalConfig/*": ["src/globalConfig/*"],
       "helpers/*": ["src/helpers/*"],
       "modules/*": ["src/components/modules/*"],
-      "layouts/*": ["layouts", "src/components/layouts/*"]
+      "layouts/*": ["src/components/layouts/*"]
     }
   },
   "include": ["src/**/*", "./index.tsx", "src/globalConfig/ts/*.d.ts"],
