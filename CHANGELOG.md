@@ -136,3 +136,9 @@ Implemented Future Weather Component
   - Added layout alias
 - ./webpack.config.js
   - Added layout alias
+
+## [1.0.5] - 2022-09-19
+Implemented mobile styles.
+
+- Added mobile responsive styles
+- Removed un-needed mediaquereies.

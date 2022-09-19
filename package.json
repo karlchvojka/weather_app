@@ -1,6 +1,6 @@
 {
   "name": "weather_app_rebuild",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple Weather App.",
   "main": "index.js",
   "scripts": {

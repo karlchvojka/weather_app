@@ -1,6 +1,5 @@
 // Library Imports
 import { createGlobalStyle } from 'styled-components'
-import { mediaQueries } from 'globalConfig/mobile'
 
 // Asset Imports
 import bgPattern from 'globalAssets/images/hexBgRep.png'
@@ -120,41 +119,6 @@ const GlobalStyle = createGlobalStyle`
   a:hover {
     color: ${accent};
   }
-
-  /* Min width of 375 */
-  ${mediaQueries('iphoneSe')`
-    
-  `}
-
-  /* Min width of 414 */
-  ${mediaQueries('iphoneXr') `
-    
-  `}
-
-  /* Min width of 576 */
-  ${mediaQueries('landscapePhones') `
-    
-  `}
-
-  /* Min width of 768 */
-  ${mediaQueries('tablet') `
-    
-  `}
-
-  /* Min width of 1024 */
-  ${mediaQueries('desktop') `
-    
-  `}
-
-  /* Min width of 1200 */
-  ${mediaQueries('widescreen') `
-    
-  `}
-
-  /* Min width of 1980 */
-  ${mediaQueries('udh') `
-    
-  `}
 
 `
 

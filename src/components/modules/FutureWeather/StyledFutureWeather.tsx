@@ -10,42 +10,25 @@ const StyledFutureWeather = styled.section`
   border-top: 1px solid ${lightBlue};
   column-gap: 10px;
   display:grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
   padding-top: 20px;
-  width: 100%;
 
-  /* Min width of 375 */
-  ${mediaQueries('iphoneSe')`
-  `}
-
-/* Min width of 414 */
-  ${mediaQueries('iphoneXr') `
-    
-  `}
+  section {
+    margin-bottom: 20px;
+  }
 
 /* Min width of 576 */
   ${mediaQueries('landscapePhones') `
-    
-  `}
-
-/* Min width of 768 */
-  ${mediaQueries('tablet') `
-    
+    grid-template-columns: repeat(4, 1fr);
   `}
 
 /* Min width of 1024 */
   ${mediaQueries('desktop') `
-    
-  `}
-
-/* Min width of 1200 */
-  ${mediaQueries('widescreen') `
-    
-  `}
-
-/* Min width of 1980 */
-  ${mediaQueries('udh') `
-    
+    grid-template-columns: repeat(7, 1fr);
+    section {
+      margin-bottom: 0px;
+    }
   `}
 `
 
