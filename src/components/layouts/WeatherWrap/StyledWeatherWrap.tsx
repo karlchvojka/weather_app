@@ -14,41 +14,30 @@ const StyledWeatherWrap = styled.section`
   box-shadow: 0px 0px 18px 4px rgba(0,171,223,0.48);
   color: ${white};
   margin: 50px auto;
-  padding: 20px;
-  width: 860px;
+  padding: 10px;
+  width: calc(95% - 20px);
 
-  /* Min width of 375 */
-  ${mediaQueries('iphoneSe')`
-  `}
-
-  /* Min width of 414 */
-    ${mediaQueries('iphoneXr') `
-      
-    `}
+  h2 {
+    text-align: center;
+  }
 
   /* Min width of 576 */
     ${mediaQueries('landscapePhones') `
-      
+      width: calc(90% - 20px);
     `}
 
   /* Min width of 768 */
     ${mediaQueries('tablet') `
-      
+      width: calc(70% - 20px);
+      h2 {
+        text-align: left;
+      }
     `}
 
   /* Min width of 1024 */
     ${mediaQueries('desktop') `
-      
-    `}
-
-  /* Min width of 1200 */
-    ${mediaQueries('widescreen') `
-      
-    `}
-
-  /* Min width of 1980 */
-    ${mediaQueries('udh') `
-      
+      width: 860px;
+      padding: 20px;
     `}
 `
 

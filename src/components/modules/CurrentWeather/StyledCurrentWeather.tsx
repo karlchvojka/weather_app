@@ -10,23 +10,28 @@ const StyledCurrentWeather = styled.section`
   
   .currentWrap {
     display: grid;
-    grid-template-columns: 150px 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "weatherIco currentTemp"
+      "weatherDetails weatherDetails";
     grid-column-gap: 20px;
+    margin-top: 20px;
 
     .weatherIco {
-      height: 200px;
+      grid-area: weatherIco;
+      height: 150px;
       svg {
         color: ${lightBlue};
         display: block;
-        height: 180px;
+        height: 150px;
         margin: 0 auto;
         width: auto;
       }
     }
 
     .tempDetails {
+      grid-area: currentTemp;
       height: 150px;
-      margin-top: 35px;
 
       h3, p {
         text-align: center;
@@ -51,15 +56,16 @@ const StyledCurrentWeather = styled.section`
 
     .weatherDetails {
       display: grid;
+      grid-area: weatherDetails;
       grid-template-columns: 1fr 1fr;
       height: 150px;
-      margin-top: 35px;
 
       p {
         color: ${lightBlue};
         font-size: 20px;
         line-height: 44px;
         margin-bottom: 10px;
+        text-align: center;
         text-transform: uppercase;
 
         span {
@@ -69,38 +75,19 @@ const StyledCurrentWeather = styled.section`
     }
   }
 
-  /* Min width of 375 */
-  ${mediaQueries('iphoneSe')`
-  `}
-
-/* Min width of 414 */
-  ${mediaQueries('iphoneXr') `
-    
-  `}
-
-/* Min width of 576 */
-  ${mediaQueries('landscapePhones') `
-    
-  `}
-
-/* Min width of 768 */
-  ${mediaQueries('tablet') `
-    
-  `}
-
 /* Min width of 1024 */
   ${mediaQueries('desktop') `
-    
-  `}
+    .currentWrap {
+      grid-template-columns: 150px 1fr 2fr;
+      grid-template-areas: "weatherIco currentTemp weatherDetails";
 
-/* Min width of 1200 */
-  ${mediaQueries('widescreen') `
-    
-  `}
+      .weatherDetails {
 
-/* Min width of 1980 */
-  ${mediaQueries('udh') `
-    
+        p {
+          text-align: left;
+        }
+      }
+    }
   `}
 `
 
