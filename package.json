@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --mode development",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
+    "build": "sh build.sh",
     "lint": "eslint . --ext .tsx"
   },
   "author": "Karl Chvojka",

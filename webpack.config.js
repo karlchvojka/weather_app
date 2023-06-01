@@ -1,3 +1,6 @@
+require('dotenv').config()
+const webpack = require('webpack')
+
 // Framework Imports
 const path = require('path')
 const Dotenv = require('dotenv-webpack')
@@ -98,6 +101,9 @@ module.exports = {
       template: path.resolve(__dirname, './src/template.html'), // template file
       filename: 'index.html', // output file
     }),
-    new Dotenv()
+    new Dotenv(),
+    new webpack.DefinePlugin({
+      "process.env": JSON.stringify(process.env)
+    })
   ]
 }
